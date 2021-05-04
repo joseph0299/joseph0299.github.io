@@ -1,0 +1,262 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+		table{
+			border:5px solid #444443;
+			border-collapse:collapse;
+			margin:10px auto;
+			
+		}
+		td,th{
+			border-bottom:1px solid #b4dfe5;
+			border-collapse:collapse;
+			padding:15px;
+			text-shadow:2px 1px #f2fcff;
+		}
+		body{
+			font-family:Tahoma;
+			color:navy;
+			font-size:1.125em;
+			background-size:100%;
+			
+			
+		}
+		thead tr{
+			background-color:#ac663e;
+			color:#ebd469;
+		}
+		input[type=text],textarea,select{
+			padding:12px 20px;
+			margin:8px 0;
+			display:inline-block;
+			border:1px solid #ccc;
+			box-sizing:border-box;
+		}
+		input[type=submit]{
+			width:100%;
+			background-color:#b4dfe5;
+			color:navy;
+			padding:14px 20px;
+			margin: 8px 0;
+			border:none;
+			border-radius:4px;
+			cursor:pointer;
+			font-family:verdana;
+			font-size:1.125em;
+		}
+		input[type=submit]{
+			background-color:#379683;
+			color:white;
+		}
+		textarea{
+			resize:none;
+		}
+    </style>
+</head>
+<body background="briones_images_csad/pizza2.jfif">
+    <link rel="stylesheet" type="text/css">
+
+	<table>
+		<form method="post" action="greeting.html">
+		<thead>
+			<tr>
+				<th style="text-align:right ; padding-left: 480px ; size:50px ; color:#f2fcff ; text-shadow:2px 2px #444443">ORDER HERE...</th>
+				<th></th>
+			</tr>
+		</thead>
+		
+		<tbody>
+			<tr>
+				<td><label for="firstname">First Name:</label></td>
+				<td><input type="text" name="firstname" size="30" placeholder="Type your firstname here" maxlength="50" autofocus required></td>
+			</tr>
+			
+			<tr>
+				<td><label for="middlename">Middle Name:</label></td>
+				<td><input type="text" name="middlename" size="30" placeholder="Type your middlename here" maxlength="50" autofocus required></td>
+			</tr>
+			
+			<tr>
+				<td><label for="lastname">Last Name:</label></td>
+				<td><input type="text" name="lastname" size="30" placeholder="Type your lastname here" maxlength="50" autofocus required></td>
+			</tr>
+			
+			<tr>
+				<td><label for="address">Address:</label></td>
+				<td><input type="text" name="address" size="30" placeholder="Type your address here" maxlength="50" autofocus required></td>
+			</tr>
+			
+			<tr>
+				<td><label for="phone">Contact#:</label></td>
+				<td><input type="tel" name="phone" size="30" placeholder="Type your contact# here" maxlength="50" autofocus required></td>
+			</tr>
+			
+			<tr>
+				<td><label for="email">Email:</label></td>
+				<td><input type="email" name="email" size="30" placeholder="Type your email here" maxlength="50" autofocus required></td>
+			</tr>
+			
+			<tr>
+				<td><label for="direction">Directions (How to get in your place?):</label></td>
+				<td>
+					<textarea rows="10" cols="30"></textarea>
+				</td>
+			</tr>
+			
+			<tr>
+				<td><label for="burgers">Burgers:</label></td>
+				<td>
+					<select name="burgers" id="burgers" size="1">
+						<option value="single">Single Patty</option>
+						<option value="double">Double Patty</option>
+						<option value="wCheese">With Cheese</option>
+						<option value="coleshow">Coleshow</option>
+						<option value="tomato">Tomato</option>
+						<option value="onion">Onion</option>
+						<option value="cucumber">Cucumber</option>
+						<option value="bacon">Bacon</option>
+					</select>
+					
+					<label name="qty">Qty:</label>
+					<select name="qty" id="qty" size="1">
+						<option value="one">1</option>
+						<option value="two">2</option>
+						<option value="three">3</option>
+						<option value="four">4</option>
+						<option value="five">5</option>
+					</select>
+				</td>
+			</tr>
+			
+			<tr>
+				<td><label for="buns">Buns</label></td>
+				<td>
+					<input type="radio" id="white" name="buns" value="White bun" CHECKED>
+					<label for="white">White buns.</label>
+					<input type="radio" id="wheat" name="buns" value="Wheat bun" CHECKED>
+					<label for="wheat">Wheat buns.</label>
+				</td>
+			</tr>
+			
+			<tr>
+				<td><label for="checkAll">Pasta:</label></td>
+				<td>
+					<input type="checkbox" id="feature1" name="feature1" value="carbonara">
+					<label for="feature1">Carbonary.</label>
+					
+					<input type="checkbox" id="feature2" name="feature2" value="pesto">
+					<label for="feature2">Pesto.</label>
+					
+					<input type="checkbox" id="feature3" name="feature3" value="spaghetti">
+					<label for="feature3">Spaghetti.</label>
+					
+					<input type="checkbox" id="feature3" name="feature3" value="xCheese">
+					<label for="feature3">Extra Cheese.</label>
+					
+					<input type="checkbox" id="feature3" name="feature3" value="xSauce">
+					<label for="feature3">Extra Sauce.</label>
+					
+					<div>
+					<label name="qty">Qty (per box):</label>
+					<select name="qty" id="qty" size="1">
+						<option value="one">1</option>
+						<option value="two">2</option>
+						<option value="three">3</option>
+						<option value="four">4</option>
+						<option value="five">5</option>
+					</div>
+					</select>
+				
+					
+				</td>
+			</tr>
+			
+			<tr>
+				<td><label for="fries">Fries:</label></td>
+				<td>
+					<input type="radio" id="white" name="buns" value="small" CHECKED>
+					<label for="small">Small size fries.</label>
+					<input type="radio" id="wheat" name="buns" value="medium" CHECKED>
+					<label for="medium">Medium size fries.</label>
+					<input type="radio" id="wheat" name="buns" value="large" CHECKED>
+					<label for="large">Large size fries.</label>
+				</td>
+			</tr>
+			
+			<tr>
+				<td><label for="fries">Fries flavor:</label></td>
+				<td>
+					<input type="radio" id="white" name="buns" value="bbq" CHECKED>
+					<label for="bbq">BBQ.</label>
+					<input type="radio" id="wheat" name="buns" value="cheese" CHECKED>
+					<label for="cheese">Cheese.</label>
+					<input type="radio" id="wheat" name="buns" value="sCream" CHECKED>
+					<label for="sCream">Sour Cream.</label>
+				</td>
+			</tr>
+			
+			<tr>
+				<td><label for="drink">Drinks:</label></td>
+				<td>
+					<select name="drink" id="drink" size="1">
+						<option value="coke">Coke</option>
+						<option value="iceTea">Ice Tea</option>
+						<option value="cokeZero">Coke Zero</option>
+						<option value="pepsi">Pepsi</option>
+						<option value="pineapple">Pineapple Juice</option>
+					</select>
+					
+					<input type="radio" id="white" name="buns" value="small" CHECKED>
+					<label for="small">Small size.</label>
+					<input type="radio" id="wheat" name="buns" value="medium" CHECKED>
+					<label for="medium">Medium size.</label>
+					<input type="radio" id="wheat" name="buns" value="large" CHECKED>
+					<label for="large">Large size.</label>
+					
+					<div>
+					<label name="qty">Qty:</label>
+					<select name="qty" id="qty" size="1">
+						<option value="one">1</option>
+						<option value="two">2</option>
+						<option value="three">3</option>
+						<option value="four">4</option>
+						<option value="five">5</option>
+					</select>
+					<div>
+
+				</td>
+			</tr>
+			
+			<tr>
+				<td><label for="feedback">Suggestions (Help us improve our order form):</label></td>
+				<td>
+					<textarea rows="10" cols="30"></textarea>
+				</td>
+			</tr>
+			
+			<tr>
+				<td><label for="deliver">Delivery:</label></td>
+				<td>
+					<input type="radio" id="delivery" name="del" value="delivery" CHECKED>
+					<label for="delivery">Delivery.</label>
+					<input type="radio" id="pick" name="del" value="delivery" CHECKED>
+					<label for="pick" >Pick-up.</label>
+				</td>
+			</tr>
+			
+		</tbody>
+		
+		<tfoot>
+			<tr>
+				<th colspan="2"><input type="submit" id="btn1" value="Submit Form / Clear Form" style="background-color:#ac663e ; text-shadow:2px 2px #444443"></th>
+			</tr>
+		</tfoot>
+		
+	</table>
+
+
+</body>
+</html>
